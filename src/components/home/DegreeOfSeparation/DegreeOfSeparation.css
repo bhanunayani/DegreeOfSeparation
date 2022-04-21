@@ -1,0 +1,11 @@
+.dosBody {
+    width: 100%;
+    margin: 20px;
+    /* min-height: 100px; */
+}
+.cardContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}

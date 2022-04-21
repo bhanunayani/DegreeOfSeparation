@@ -1,0 +1,9 @@
+.perBody {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card {
+    width: 80%;
+    display: inline;
+}

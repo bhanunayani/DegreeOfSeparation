@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import Person from './components/home/Person/Person';
+import Header from './components/Header/header';
+import Relationship from './components/home/Relationship/Relationship';
+import DegreeOfSeparation from './components/home/DegreeOfSeparation/DegreeOfSeparation';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React, { Component } from 'react'
+
+export class App extends Component {
+  constructor(){
+    super();
+  }
+  render() {
+    return (
+     <div className="App">
+      <Header />
+      <div className='appBody'>
+        <Person />
+        <Relationship />
+      </div>
+      <DegreeOfSeparation />
     </div>
-  );
+    )
+  }
 }
 
-export default App;
+export default App
